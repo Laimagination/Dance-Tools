@@ -1,6 +1,6 @@
 services:
   app:
-    image: ghcr.io/YOUR_GITHUB_USERNAME/dance-studio-tools:latest
+    image: ghcr.io/laimagination/dance-tools:latest
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.dancestudio.rule=Host(`yourdomain.com`) || Host(`www.yourdomain.com`)"
