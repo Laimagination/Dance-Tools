@@ -17,7 +17,7 @@ export function Sidebar() {
     <div className="flex h-full w-64 flex-col bg-gray-900">
       <div className="flex h-16 items-center px-6">
         <Link href="/dashboard" className="text-xl font-bold text-white">
-          Dance Studio Tools
+          AI for Dance Studios
         </Link>
       </div>
       <nav className="flex-1 space-y-1 px-4 py-4">

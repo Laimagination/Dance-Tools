@@ -89,3 +89,19 @@ model SubscriptionHistory {
 
   @@map("subscription_history")
 }
+
+// Lead capture for contact form submissions
+model Lead {
+  id         String   @id @default(cuid())
+  name       String
+  email      String
+  studioName String   @map("studio_name")
+  phone      String?
+  message    String?
+  source     String?  @default("website") // Track where lead came from
+  status     String   @default("new") // new, contacted, qualified, converted
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  @@map("leads")
+}

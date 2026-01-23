@@ -80,7 +80,7 @@ export default function SignupPage() {
       <CardHeader className="space-y-1">
         <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
         <CardDescription>
-          Enter your details to get started with Dance Studio Tools
+          Enter your details to get started with AI for Dance Studios
         </CardDescription>
       </CardHeader>
       <form onSubmit={handleSubmit}>
